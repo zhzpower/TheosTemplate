@@ -1,10 +1,23 @@
 
 
+# 功能介绍：
+超级方便，傻瓜式使用
+1. 一键创建xcode可以编译theos tweak
+2. xcode直接编译tweak
+3. 编译、安装一键搞定，不需要额外输入ssh密码
 
-fork https://github.com/onezens/WeChatBot
+# 使用方式：
+## 1. 创建新tweak工程
+1. 修改tweakrc.plist中配置
+2. cd Bin/
+3. 执行 ·sh generate.sh·
+4. done
 
-ssh 连手机不密码
+## 2. coding
+1. TheosTempelete/Classes目录下直接写OC代码，有代码提示，和原生一样
 
+# 参考：
 
-Depends: mobilesubstrate #依赖库和依赖插件，如果需要插件在cydia安装后不重启springboard可以删掉，否则每次重新
-Icon: file:///Library/AppSupport/Resource/Imgs/icon.png #tweek icon
+https://github.com/onezens/WeChatBot
+
+https://github.com/b3ll/Xcode-Theos
