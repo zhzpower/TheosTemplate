@@ -7,7 +7,7 @@
 typedef void(^LogTestBlk)(void);
  
 
-@interface ViewController: UIViewController
+@interface SettingsViewController: UIViewController
 
 @property (nonatomic, strong) UIImage *img;
 @property (nonatomic, assign) NSTimeInterval duration;
@@ -17,14 +17,24 @@ typedef void(^LogTestBlk)(void);
 @end
 
 
-HOOK(ViewController)
+HOOK(SettingsViewController)
 
-+ (void)load {
-    testlog();
+
+- (void)viewDidLoad {
+    ORIG();
     
-    [TheosTempelete sum:1 add:2];
-    UIImage *image = Img(@"icon.png");
-    NSLog(@"%@", image);
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:Img(@"icon.png")];
+    imageView.frame = CGRectMake(100, 100, 100, 100);
+    imageView.backgroundColor = UIColor.redColor;
+    [self.view addSubview:imageView];
+    
+    UILabel *sumLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 200, 100, 100)];
+    [self.view addSubview:sumLabel];
+
+    sumLabel.text = @([TheosTempelete sum:100 add:2]).stringValue;
+
+    
 }
+
 
 END()

@@ -35,6 +35,7 @@
 		C5E60A1E28557BAC002293EE /* control */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
 		C5E60A1F28557BAC002293EE /* Tweak.xi */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = Tweak.xi; sourceTree = "<group>"; };
 		C5E60A2128557C2E002293EE /* xctheos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xctheos.h; sourceTree = "<group>"; };
+		C5E60A2728559F02002293EE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +82,7 @@
 				C5E60A1E28557BAC002293EE /* control */,
 				C5E60A1D28557BAC002293EE /* theostemplate.plist */,
 				C5E60A1C28557BAC002293EE /* Makefile */,
+				C5E60A2728559F02002293EE /* README.md */,
 			);
 			name = Config;
 			sourceTree = "<group>";
@@ -112,6 +114,7 @@
 				C5E60A062855780F002293EE /* Sources */,
 				C5E60A072855780F002293EE /* Frameworks */,
 				C5E60A082855780F002293EE /* CopyFiles */,
+				C5E60A282855A02F002293EE /* Run Make Package */,
 			);
 			buildRules = (
 			);
@@ -153,6 +156,27 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C5E60A282855A02F002293EE /* Run Make Package */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Make Package";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport THEOS=/opt/theos\necho $THEOS\n\nmake clean && make && make package && make install\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C5E60A062855780F002293EE /* Sources */ = {
@@ -218,7 +242,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
