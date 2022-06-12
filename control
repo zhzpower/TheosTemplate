@@ -1,0 +1,9 @@
+Package: com.zhz.theostemplate
+Name: theostemplate
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: zhz
+Author: zhz
+Section: Tweaks

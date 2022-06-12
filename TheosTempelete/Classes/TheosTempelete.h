@@ -7,6 +7,9 @@
 
 #import <Foundation/Foundation.h>
 
+void testlog(void);
 @interface TheosTempelete : NSObject
+
++ (NSInteger)sum:(NSInteger) a add:(NSInteger)b;
 
 @end

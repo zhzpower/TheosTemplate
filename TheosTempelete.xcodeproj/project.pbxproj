@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C5E60A0F2855780F002293EE /* TheosTempelete.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E60A0E2855780F002293EE /* TheosTempelete.m */; };
 		C5E60A102855780F002293EE /* TheosTempelete.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C5E60A0D2855780F002293EE /* TheosTempelete.h */; };
+		C5E60A2028557BAC002293EE /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = C5E60A1C28557BAC002293EE /* Makefile */; };
+		C5E60A24285582D6002293EE /* Tweak.xi in Sources */ = {isa = PBXBuildFile; fileRef = C5E60A1F28557BAC002293EE /* Tweak.xi */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,11 @@
 		C5E60A0A2855780F002293EE /* libTheosTempelete.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTheosTempelete.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5E60A0D2855780F002293EE /* TheosTempelete.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheosTempelete.h; sourceTree = "<group>"; };
 		C5E60A0E2855780F002293EE /* TheosTempelete.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheosTempelete.m; sourceTree = "<group>"; };
+		C5E60A1C28557BAC002293EE /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		C5E60A1D28557BAC002293EE /* juejinhook.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = juejinhook.plist; sourceTree = "<group>"; };
+		C5E60A1E28557BAC002293EE /* control */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
+		C5E60A1F28557BAC002293EE /* Tweak.xi */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = Tweak.xi; sourceTree = "<group>"; };
+		C5E60A2128557C2E002293EE /* xctheos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xctheos.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +51,8 @@
 		C5E60A012855780F002293EE = {
 			isa = PBXGroup;
 			children = (
+				C5E60A1F28557BAC002293EE /* Tweak.xi */,
+				C5E60A1628557AB6002293EE /* Config */,
 				C5E60A0C2855780F002293EE /* TheosTempelete */,
 				C5E60A0B2855780F002293EE /* Products */,
 			);
@@ -60,10 +69,37 @@
 		C5E60A0C2855780F002293EE /* TheosTempelete */ = {
 			isa = PBXGroup;
 			children = (
+				C5E60A2628558772002293EE /* Classes */,
+				C5E60A252855866B002293EE /* Headers */,
+			);
+			path = TheosTempelete;
+			sourceTree = "<group>";
+		};
+		C5E60A1628557AB6002293EE /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C5E60A1E28557BAC002293EE /* control */,
+				C5E60A1D28557BAC002293EE /* juejinhook.plist */,
+				C5E60A1C28557BAC002293EE /* Makefile */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		C5E60A252855866B002293EE /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				C5E60A2128557C2E002293EE /* xctheos.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		C5E60A2628558772002293EE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
 				C5E60A0D2855780F002293EE /* TheosTempelete.h */,
 				C5E60A0E2855780F002293EE /* TheosTempelete.m */,
 			);
-			path = TheosTempelete;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +159,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5E60A24285582D6002293EE /* Tweak.xi in Sources */,
+				C5E60A2028557BAC002293EE /* Makefile in Sources */,
 				C5E60A0F2855780F002293EE /* TheosTempelete.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +282,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"XcodeTheos=1",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

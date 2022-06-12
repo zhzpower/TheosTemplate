@@ -7,6 +7,14 @@
 
 #import "TheosTempelete.h"
 
+void testlog(void) {
+    NSLog(@"aafdafdaaa");
+}
+
 @implementation TheosTempelete
+
++ (NSInteger)sum:(NSInteger) a add:(NSInteger)b {
+    return a + b;
+}
 
 @end
