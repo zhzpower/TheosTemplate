@@ -14,6 +14,11 @@
     #define CONCAT(stuff, otherstuff) _CONCAT(stuff, otherstuff)
     #define UNIQUE_SUFFIX(stuff) CONCAT(stuff, __COUNTER__)
 
+    // 全资源路径 /TheosTempelete/layout/Library/AppSupport/Resource/
+    #define SrcPath @"/Library/AppSupport/Resource"
+    // 图片资源路径
+    #define Img(fullname) [UIImage imageWithContentsOfFile:[NSString stringWithFormat:@"%@/Imgs/%@", SrcPath, fullname]]
+
     #ifdef XcodeTheos
         #import <objc/runtime.h>
         #import <Foundation/Foundation.h>

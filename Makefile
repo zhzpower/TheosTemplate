@@ -2,7 +2,7 @@ DEBUG = 1
 #用于调试的设备地址
 THEOS_DEVICE_IP = 192.168.0.101
 #THEOS_DEVICE_PORT = 2222
-#ARCHS = arm64e
+ARCHS = arm64e #armv7 arm64
 
 #用于编译的SDK和支持的ios最低版本
 #TARGET = iphone:11.2:10.0

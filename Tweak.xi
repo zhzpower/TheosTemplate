@@ -5,7 +5,7 @@
 #import "TheosTempelete.h"
 
 typedef void(^LogTestBlk)(void);
-
+ 
 
 @interface ViewController: UIViewController
 
@@ -23,6 +23,8 @@ HOOK(ViewController)
     testlog();
     
     [TheosTempelete sum:1 add:2];
+    UIImage *image = Img(@"icon.png");
+    NSLog(@"%@", image);
 }
 
 END()

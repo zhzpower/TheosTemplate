@@ -31,7 +31,7 @@
 		C5E60A0D2855780F002293EE /* TheosTempelete.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheosTempelete.h; sourceTree = "<group>"; };
 		C5E60A0E2855780F002293EE /* TheosTempelete.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheosTempelete.m; sourceTree = "<group>"; };
 		C5E60A1C28557BAC002293EE /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		C5E60A1D28557BAC002293EE /* juejinhook.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = juejinhook.plist; sourceTree = "<group>"; };
+		C5E60A1D28557BAC002293EE /* theostemplate.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = theostemplate.plist; sourceTree = "<group>"; };
 		C5E60A1E28557BAC002293EE /* control */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
 		C5E60A1F28557BAC002293EE /* Tweak.xi */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = Tweak.xi; sourceTree = "<group>"; };
 		C5E60A2128557C2E002293EE /* xctheos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xctheos.h; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				C5E60A1E28557BAC002293EE /* control */,
-				C5E60A1D28557BAC002293EE /* juejinhook.plist */,
+				C5E60A1D28557BAC002293EE /* theostemplate.plist */,
 				C5E60A1C28557BAC002293EE /* Makefile */,
 			);
 			name = Config;

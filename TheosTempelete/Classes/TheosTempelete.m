@@ -8,7 +8,7 @@
 #import "TheosTempelete.h"
 
 void testlog(void) {
-    NSLog(@"aafdafdaaa");
+    NSLog(@"abcdifadfasas");
 }
 
 @implementation TheosTempelete
