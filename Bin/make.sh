@@ -12,6 +12,9 @@ echo $THEOS
 echo $SRCROOT
 
 
+# TODO: 自动读手机的ip
+# TODO:移除历史package
+
 echo "1. make package..."
 make clean && make && make package
 

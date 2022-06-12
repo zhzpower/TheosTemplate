@@ -4,12 +4,14 @@
 #  TheosTempelete
 #
 #  Created by zhz on 2022/6/12.
-#  
+#
+# cd Bin/
 
-plistpath=`pwd`/../theostemplate.plist
-tweakrc_path=`pwd`/../tweakrc.plist
-makefile_path=`pwd`/../Makefile
-control_path=`pwd`/../control
+root_path=$(dirname "$PWD")
+plistpath=$root_path/theostemplate.plist
+tweakrc_path=$root_path/tweakrc.plist
+makefile_path=$root_path/Makefile
+control_path=$root_path/control
 
 function fixup() {
     echo "  [-]"$*
@@ -36,12 +38,20 @@ function fixupBundleId() {
 
 function fixupProject() {
     echo "  [-]"$1
-    project=$1
-    replace_string="TheosTempelete"
-    replace_lower_string=`echo ${replace_string} | tr A-Z a-z`
-    echo $replace_string $replace_lower_string
+    tweak_name=`echo $1 | tr A-Z a-z`
+#1. 替换tweak name: projecthook
+    replace_tweak_name="theostemplate"
 
-#tweak name: theostemplate
+    fixup $tweak_name $replace_tweak_name $makefile_path
+    fixup $tweak_name $replace_tweak_name $control_path
+    rename -f "s/$replace_tweak_name/$tweak_name/g" $plistpath
+    
+#2. 替换项目名
+    
+#    replace_string="TheosTempelete"
+#    replace_lower_string=`echo ${tweak_name} | tr A-Z a-z`
+#    echo $replace_string $replace_lower_string
+    
 
 }
 
