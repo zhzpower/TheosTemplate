@@ -31,7 +31,7 @@ HOOK(SettingsViewController)
     UILabel *sumLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 200, 100, 100)];
     [self.view addSubview:sumLabel];
 
-    sumLabel.text = @([TheosTempelete sum:100 add:2]).stringValue;
+    sumLabel.text = @([TheosTempelete sum:100 add:4]).stringValue;
 
     
 }

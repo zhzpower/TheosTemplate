@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>project</key>
+	<string>ProjectHook</string>
+	<key>target_bundle_id</key>
+	<string>com.baidu.ios</string>
+	<key>target_process</key>
+	<string>Baidu</string>
+	<key>author</key>
+	<string>zhz</string>
+</dict>
+</plist>

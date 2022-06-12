@@ -48,7 +48,6 @@ theostemplate_LIBRARIES = stdc++ c++
 theostemplate_OBJCFLAGS +=  -Wno-deprecated-declarations -Wno-unused-variable
 
 
-
 include $(THEOS_MAKE_PATH)/tweak.mk
 
 
@@ -59,7 +58,7 @@ include $(THEOS_MAKE_PATH)/tweak.mk
 #	chmod 755 .theos/_/DEBIAN/postinst
 #	chmod 755 .theos/_/DEBIAN/postrm
 after-install::
-	install.exec "killall -9 WeChat"
+	install.exec "killall -9 __Process__"
 p::
 	make package
 c::
