@@ -16,6 +16,15 @@
 ## 2. coding
 1. TheosTempelete/Classes目录下直接写OC代码，有代码提示，和原生一样
 
+
+# TODO
+TODO: 自动读手机的ip
+TODO: 移除历史package
+TODO: 自动杀掉进程,自动重启进程
+TODO: 优化替换字符串
+
+
+
 # 参考：
 
 https://github.com/onezens/WeChatBot

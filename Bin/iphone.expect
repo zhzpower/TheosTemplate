@@ -10,7 +10,7 @@ set PASSWD  "alpine"
 spawn make install
 
 # 判断上次输出结果里是否包含“password:”的字符串，如果有则立即返回，否则就等待一段时间(timeout)后返回
-expect "*password:"
+expect "*Password"
 
 # 发送内容ispass(密码、命令等)
 send "$PASSWD\r"

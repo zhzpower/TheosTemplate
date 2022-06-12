@@ -13,7 +13,8 @@ echo $SRCROOT
 
 
 # TODO: 自动读手机的ip
-# TODO:移除历史package
+# TODO: 移除历史package
+# TODO: 自动杀掉进程,自动重启进程
 
 echo "1. make package..."
 make clean && make && make package
