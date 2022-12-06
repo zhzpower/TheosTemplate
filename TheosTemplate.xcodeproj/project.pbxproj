@@ -36,9 +36,8 @@
 		C5E60A2128557C2E002293EE /* xctheos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xctheos.h; sourceTree = "<group>"; };
 		C5E60A2728559F02002293EE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C5E60A2A2855B1A5002293EE /* make.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = make.sh; sourceTree = "<group>"; };
-		C5E60A2B2855B399002293EE /* generate.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generate.sh; sourceTree = "<group>"; };
 		C5E60A2E2855F741002293EE /* iphone.expect */ = {isa = PBXFileReference; explicitFileType = text.script; path = iphone.expect; sourceTree = "<group>"; };
-		C5E60A30285601CD002293EE /* tweakrc.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = tweakrc.plist; sourceTree = "<group>"; };
+		C5EB8953293F48B600D6C0F9 /* TheosTemplate.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = TheosTemplate.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +82,7 @@
 		C5E60A1628557AB6002293EE /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				C5E60A30285601CD002293EE /* tweakrc.plist */,
+				C5EB8953293F48B600D6C0F9 /* TheosTemplate.plist */,
 				C5E60A1E28557BAC002293EE /* control */,
 				C5E60A1C28557BAC002293EE /* Makefile */,
 				C5E60A2728559F02002293EE /* README.md */,
@@ -111,7 +110,6 @@
 		C5E60A292855B18F002293EE /* Bin */ = {
 			isa = PBXGroup;
 			children = (
-				C5E60A2B2855B399002293EE /* generate.sh */,
 				C5E60A2E2855F741002293EE /* iphone.expect */,
 				C5E60A2A2855B1A5002293EE /* make.sh */,
 			);
