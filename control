@@ -1,5 +1,5 @@
-Package: com.__Author__.theostemplate
-Name: theostemplate
+Package: com.__Author__.TheosTemplate
+Name: TheosTemplate
 Depends: mobilesubstrate
 Version: 0.0.1
 Architecture: iphoneos-arm

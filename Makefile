@@ -10,42 +10,42 @@ ARCHS = arm64e #armv7 arm64
 include $(THEOS)/makefiles/common.mk
 
 # 工程名称
-TWEAK_NAME = theostemplate
+TWEAK_NAME = TheosTemplate
 # 进程名称
 INSTALL_TARGET_PROCESSES = xitu
 
 # 采用ARC内存管理
-theostemplate_CFLAGS = -fobjc-arc
+TheosTemplate_CFLAGS = -fobjc-arc
 
 # 头文件
-theostemplate_OBJCFLAGS += -I./TheosTemplate/*/
-theostemplate_OBJCFLAGS += -I./TheosTemplate/Headers/
-theostemplate_OBJCFLAGS += -I./TheosTemplate/Classes/
-#theostemplate_OBJCFLAGS += -I./TheosTemplate/Classes/*/*.h
+TheosTemplate_OBJCFLAGS += -I./TheosTemplate/*/
+TheosTemplate_OBJCFLAGS += -I./TheosTemplate/Headers/
+TheosTemplate_OBJCFLAGS += -I./TheosTemplate/Classes/
+#TheosTemplate_OBJCFLAGS += -I./TheosTemplate/Classes/*/*.h
 
 # 编译的实现文件
-theostemplate_FILES = Tweak.xi
-theostemplate_FILES += $(wildcard TheosTemplate/Classes/*.mm) $(wildcard TheosTemplate/Classes/*/*.mm)
-theostemplate_FILES += $(wildcard TheosTemplate/Classes/*.m) $(wildcard TheosTemplate/Classes/*/*.m)
+TheosTemplate_FILES = Tweak.xi
+TheosTemplate_FILES += $(wildcard TheosTemplate/Classes/*.mm) $(wildcard TheosTemplate/Classes/*/*.mm)
+TheosTemplate_FILES += $(wildcard TheosTemplate/Classes/*.m) $(wildcard TheosTemplate/Classes/*/*.m)
 
 
 # 导入系统的frameworks
-theostemplate_FRAMEWORKS = Foundation UIKit
+TheosTemplate_FRAMEWORKS = Foundation UIKit
 
 # 导入系统库
-theostemplate_LIBRARIES = stdc++ c++
+TheosTemplate_LIBRARIES = stdc++ c++
 
 # 导入第三方Frameworks, 动态库需特殊处理
-#theostemplate_LDFLAGS += -F./Libraries/dynamic -F./Libraries/static   # 识别的库实现
-#theostemplate_CFLAGS  += -F./Libraries/dynamic -F./Libraries/static   # 头文件识别
-#theostemplate_FRAMEWORKS += WCBFWStatic WCBFWDynamic
+#TheosTemplate_LDFLAGS += -F./Libraries/dynamic -F./Libraries/static   # 识别的库实现
+#TheosTemplate_CFLAGS  += -F./Libraries/dynamic -F./Libraries/static   # 头文件识别
+#TheosTemplate_FRAMEWORKS += WCBFWStatic WCBFWDynamic
 # 导入第三方lib
-#theostemplate_LDFLAGS += -L./Libraries/dynamic -L./Libraries/static 	# 识别的库实现
-#theostemplate_CFLAGS  += -I./Libraries/include  						# 头文件识别
-#theostemplate_LIBRARIES += WCBStatic WCBDyLib
+#TheosTemplate_LDFLAGS += -L./Libraries/dynamic -L./Libraries/static 	# 识别的库实现
+#TheosTemplate_CFLAGS  += -I./Libraries/include  						# 头文件识别
+#TheosTemplate_LIBRARIES += WCBStatic WCBDyLib
 
 #忽略OC警告，避免警告导致编译不过
-theostemplate_OBJCFLAGS +=  -Wno-deprecated-declarations -Wno-unused-variable
+TheosTemplate_OBJCFLAGS +=  -Wno-deprecated-declarations -Wno-unused-variable
 
 
 include $(THEOS_MAKE_PATH)/tweak.mk
