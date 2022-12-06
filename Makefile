@@ -25,8 +25,8 @@ EmoCrack_OBJCFLAGS += -I./OCClass/Classes/
 
 # 编译的实现文件
 TheosTemplate_FILES = Tweak.xi
-TheosTemplate_FILES += $(wildcard TheosTemplate/Classes/*.mm) $(wildcard TheosTemplate/Classes/*/*.mm)
-TheosTemplate_FILES += $(wildcard TheosTemplate/Classes/*.m) $(wildcard TheosTemplate/Classes/*/*.m)
+TheosTemplate_FILES += $(wildcard OCClass/Classes/*.mm) $(wildcard OCClass/Classes/*/*.mm)
+TheosTemplate_FILES += $(wildcard OCClass/Classes/*.m) $(wildcard OCClass/Classes/*/*.m)
 
 
 # 导入系统的frameworks
