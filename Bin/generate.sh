@@ -5,7 +5,6 @@
 echo `pwd`
 
 #1. 读取配置
-typeset -l debname
 read -p "Enter target app bundle id[com.xx.xx]: " targetbundleid
 read -p "Enter target process[SpringBoard]: " targetprocess
 read -p "Enter deb name[xxcrack]: " debname
@@ -13,7 +12,7 @@ read -p "Enter deb autor[zhz]: " autor
 
 # targetbundleid="com.emo.zab"
 # targetprocess="EmoSpeedup"
-# debname="emoCrack"
+ debname=`echo ${debname} | tr A-Z a-z`
 # autor="zhz"
 if [ -z $targetbundleid ] || [ -z $debname ]; then
     echo "input targetbundleid debname!!!!"
