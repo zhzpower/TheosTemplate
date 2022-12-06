@@ -5,13 +5,13 @@
 //  Created by zhz on 2022/6/12.
 //
 
-#import "TheosTemplate.h"
+#import "NewClass.h"
 
-void testlog(void) {
-    NSLog(@"abcdifadfasas");
+void theoslog(NSString * info) {
+    NSLog(@"log: %@", info);
 }
 
-@implementation TheosTemplate
+@implementation NewClass
 
 + (NSInteger)sum:(NSInteger) a add:(NSInteger)b {
     return a + b;

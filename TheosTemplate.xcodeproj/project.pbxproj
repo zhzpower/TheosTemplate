@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C5E60A0F2855780F002293EE /* TheosTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E60A0E2855780F002293EE /* TheosTemplate.m */; };
-		C5E60A102855780F002293EE /* TheosTemplate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C5E60A0D2855780F002293EE /* TheosTemplate.h */; };
+		C5E60A0F2855780F002293EE /* NewClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E60A0E2855780F002293EE /* NewClass.m */; };
+		C5E60A102855780F002293EE /* NewClass.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C5E60A0D2855780F002293EE /* NewClass.h */; };
 		C5E60A2028557BAC002293EE /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = C5E60A1C28557BAC002293EE /* Makefile */; };
 		C5E60A24285582D6002293EE /* Tweak.xi in Sources */ = {isa = PBXBuildFile; fileRef = C5E60A1F28557BAC002293EE /* Tweak.xi */; };
 /* End PBXBuildFile section */
@@ -20,7 +20,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				C5E60A102855780F002293EE /* TheosTemplate.h in CopyFiles */,
+				C5E60A102855780F002293EE /* NewClass.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -28,8 +28,8 @@
 
 /* Begin PBXFileReference section */
 		C5E60A0A2855780F002293EE /* libTheosTemplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTheosTemplate.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C5E60A0D2855780F002293EE /* TheosTemplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheosTemplate.h; sourceTree = "<group>"; };
-		C5E60A0E2855780F002293EE /* TheosTemplate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheosTemplate.m; sourceTree = "<group>"; };
+		C5E60A0D2855780F002293EE /* NewClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewClass.h; sourceTree = "<group>"; };
+		C5E60A0E2855780F002293EE /* NewClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewClass.m; sourceTree = "<group>"; };
 		C5E60A1C28557BAC002293EE /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		C5E60A1E28557BAC002293EE /* control */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
 		C5E60A1F28557BAC002293EE /* Tweak.xi */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = Tweak.xi; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 				C5E60A1F28557BAC002293EE /* Tweak.xi */,
 				C5E60A292855B18F002293EE /* Bin */,
 				C5E60A1628557AB6002293EE /* Config */,
-				C5E60A0C2855780F002293EE /* TheosTemplate */,
+				C5E60A0C2855780F002293EE /* OCClass */,
 				C5E60A0B2855780F002293EE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,13 +70,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C5E60A0C2855780F002293EE /* TheosTemplate */ = {
+		C5E60A0C2855780F002293EE /* OCClass */ = {
 			isa = PBXGroup;
 			children = (
 				C5E60A2628558772002293EE /* Classes */,
 				C5E60A252855866B002293EE /* Headers */,
 			);
-			path = TheosTemplate;
+			path = OCClass;
 			sourceTree = "<group>";
 		};
 		C5E60A1628557AB6002293EE /* Config */ = {
@@ -101,8 +101,8 @@
 		C5E60A2628558772002293EE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C5E60A0D2855780F002293EE /* TheosTemplate.h */,
-				C5E60A0E2855780F002293EE /* TheosTemplate.m */,
+				C5E60A0D2855780F002293EE /* NewClass.h */,
+				C5E60A0E2855780F002293EE /* NewClass.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -197,7 +197,7 @@
 			files = (
 				C5E60A24285582D6002293EE /* Tweak.xi in Sources */,
 				C5E60A2028557BAC002293EE /* Makefile in Sources */,
-				C5E60A0F2855780F002293EE /* TheosTemplate.m in Sources */,
+				C5E60A0F2855780F002293EE /* NewClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
