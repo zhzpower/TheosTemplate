@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #  run.sh
-#  TheosTempelete
+#  TheosTemplate
 #
 #  Created by zhz on 2022/6/12.
 #
@@ -48,7 +48,7 @@ function fixupProject() {
     
 #2. 替换项目名
     
-#    replace_string="TheosTempelete"
+#    replace_string="TheosTemplate"
 #    replace_lower_string=`echo ${tweak_name} | tr A-Z a-z`
 #    echo $replace_string $replace_lower_string
     

@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #  make.sh
-#  TheosTempelete
+#  TheosTemplate
 #
 #  Created by zhz on 2022/6/12.
 #  

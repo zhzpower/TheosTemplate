@@ -2,7 +2,7 @@
 #import "xctheos.h"
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-#import "TheosTempelete.h"
+#import "TheosTemplate.h"
 
 typedef void(^LogTestBlk)(void);
  
@@ -31,7 +31,7 @@ HOOK(SettingsViewController)
     UILabel *sumLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 200, 100, 100)];
     [self.view addSubview:sumLabel];
 
-    sumLabel.text = @([TheosTempelete sum:100 add:4]).stringValue;
+    sumLabel.text = @([TheosTemplate sum:100 add:4]).stringValue;
 
     
 }

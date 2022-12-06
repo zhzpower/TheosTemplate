@@ -14,7 +14,7 @@
 4. done
 
 ## 2. coding
-1. TheosTempelete/Classes目录下直接写OC代码，有代码提示，和原生一样
+1. TheosTemplate/Classes目录下直接写OC代码，有代码提示，和原生一样
 
 
 # TODO

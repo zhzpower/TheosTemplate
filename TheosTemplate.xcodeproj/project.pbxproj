@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C5E60A0F2855780F002293EE /* TheosTempelete.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E60A0E2855780F002293EE /* TheosTempelete.m */; };
-		C5E60A102855780F002293EE /* TheosTempelete.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C5E60A0D2855780F002293EE /* TheosTempelete.h */; };
+		C5E60A0F2855780F002293EE /* TheosTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E60A0E2855780F002293EE /* TheosTemplate.m */; };
+		C5E60A102855780F002293EE /* TheosTemplate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C5E60A0D2855780F002293EE /* TheosTemplate.h */; };
 		C5E60A2028557BAC002293EE /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = C5E60A1C28557BAC002293EE /* Makefile */; };
 		C5E60A24285582D6002293EE /* Tweak.xi in Sources */ = {isa = PBXBuildFile; fileRef = C5E60A1F28557BAC002293EE /* Tweak.xi */; };
 /* End PBXBuildFile section */
@@ -20,16 +20,16 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				C5E60A102855780F002293EE /* TheosTempelete.h in CopyFiles */,
+				C5E60A102855780F002293EE /* TheosTemplate.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C5E60A0A2855780F002293EE /* libTheosTempelete.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTheosTempelete.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C5E60A0D2855780F002293EE /* TheosTempelete.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheosTempelete.h; sourceTree = "<group>"; };
-		C5E60A0E2855780F002293EE /* TheosTempelete.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheosTempelete.m; sourceTree = "<group>"; };
+		C5E60A0A2855780F002293EE /* libTheosTemplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTheosTemplate.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5E60A0D2855780F002293EE /* TheosTemplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheosTemplate.h; sourceTree = "<group>"; };
+		C5E60A0E2855780F002293EE /* TheosTemplate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheosTemplate.m; sourceTree = "<group>"; };
 		C5E60A1C28557BAC002293EE /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		C5E60A1E28557BAC002293EE /* control */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
 		C5E60A1F28557BAC002293EE /* Tweak.xi */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = Tweak.xi; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 				C5E60A1F28557BAC002293EE /* Tweak.xi */,
 				C5E60A292855B18F002293EE /* Bin */,
 				C5E60A1628557AB6002293EE /* Config */,
-				C5E60A0C2855780F002293EE /* TheosTempelete */,
+				C5E60A0C2855780F002293EE /* TheosTemplate */,
 				C5E60A0B2855780F002293EE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,18 +66,18 @@
 		C5E60A0B2855780F002293EE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C5E60A0A2855780F002293EE /* libTheosTempelete.a */,
+				C5E60A0A2855780F002293EE /* libTheosTemplate.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C5E60A0C2855780F002293EE /* TheosTempelete */ = {
+		C5E60A0C2855780F002293EE /* TheosTemplate */ = {
 			isa = PBXGroup;
 			children = (
 				C5E60A2628558772002293EE /* Classes */,
 				C5E60A252855866B002293EE /* Headers */,
 			);
-			path = TheosTempelete;
+			path = TheosTemplate;
 			sourceTree = "<group>";
 		};
 		C5E60A1628557AB6002293EE /* Config */ = {
@@ -102,8 +102,8 @@
 		C5E60A2628558772002293EE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C5E60A0D2855780F002293EE /* TheosTempelete.h */,
-				C5E60A0E2855780F002293EE /* TheosTempelete.m */,
+				C5E60A0D2855780F002293EE /* TheosTemplate.h */,
+				C5E60A0E2855780F002293EE /* TheosTemplate.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -121,9 +121,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C5E60A092855780F002293EE /* TheosTempelete */ = {
+		C5E60A092855780F002293EE /* TheosTemplate */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C5E60A132855780F002293EE /* Build configuration list for PBXNativeTarget "TheosTempelete" */;
+			buildConfigurationList = C5E60A132855780F002293EE /* Build configuration list for PBXNativeTarget "TheosTemplate" */;
 			buildPhases = (
 				C5E60A062855780F002293EE /* Sources */,
 				C5E60A072855780F002293EE /* Frameworks */,
@@ -134,9 +134,9 @@
 			);
 			dependencies = (
 			);
-			name = TheosTempelete;
-			productName = TheosTempelete;
-			productReference = C5E60A0A2855780F002293EE /* libTheosTempelete.a */;
+			name = TheosTemplate;
+			productName = TheosTemplate;
+			productReference = C5E60A0A2855780F002293EE /* libTheosTemplate.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -153,7 +153,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C5E60A052855780F002293EE /* Build configuration list for PBXProject "TheosTempelete" */;
+			buildConfigurationList = C5E60A052855780F002293EE /* Build configuration list for PBXProject "TheosTemplate" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -166,7 +166,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C5E60A092855780F002293EE /* TheosTempelete */,
+				C5E60A092855780F002293EE /* TheosTemplate */,
 			);
 		};
 /* End PBXProject section */
@@ -199,7 +199,7 @@
 			files = (
 				C5E60A24285582D6002293EE /* Tweak.xi in Sources */,
 				C5E60A2028557BAC002293EE /* Makefile in Sources */,
-				C5E60A0F2855780F002293EE /* TheosTempelete.m in Sources */,
+				C5E60A0F2855780F002293EE /* TheosTemplate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +347,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C5E60A052855780F002293EE /* Build configuration list for PBXProject "TheosTempelete" */ = {
+		C5E60A052855780F002293EE /* Build configuration list for PBXProject "TheosTemplate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C5E60A112855780F002293EE /* Debug */,
@@ -356,7 +356,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C5E60A132855780F002293EE /* Build configuration list for PBXNativeTarget "TheosTempelete" */ = {
+		C5E60A132855780F002293EE /* Build configuration list for PBXNativeTarget "TheosTemplate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C5E60A142855780F002293EE /* Debug */,

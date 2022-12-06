@@ -18,15 +18,15 @@ INSTALL_TARGET_PROCESSES = xitu
 theostemplate_CFLAGS = -fobjc-arc
 
 # 头文件
-theostemplate_OBJCFLAGS += -I./TheosTempelete/*/
-theostemplate_OBJCFLAGS += -I./TheosTempelete/Headers/
-theostemplate_OBJCFLAGS += -I./TheosTempelete/Classes/
-#theostemplate_OBJCFLAGS += -I./TheosTempelete/Classes/*/*.h
+theostemplate_OBJCFLAGS += -I./TheosTemplate/*/
+theostemplate_OBJCFLAGS += -I./TheosTemplate/Headers/
+theostemplate_OBJCFLAGS += -I./TheosTemplate/Classes/
+#theostemplate_OBJCFLAGS += -I./TheosTemplate/Classes/*/*.h
 
 # 编译的实现文件
 theostemplate_FILES = Tweak.xi
-theostemplate_FILES += $(wildcard TheosTempelete/Classes/*.mm) $(wildcard TheosTempelete/Classes/*/*.mm)
-theostemplate_FILES += $(wildcard TheosTempelete/Classes/*.m) $(wildcard TheosTempelete/Classes/*/*.m)
+theostemplate_FILES += $(wildcard TheosTemplate/Classes/*.mm) $(wildcard TheosTemplate/Classes/*/*.mm)
+theostemplate_FILES += $(wildcard TheosTemplate/Classes/*.m) $(wildcard TheosTemplate/Classes/*/*.m)
 
 
 # 导入系统的frameworks

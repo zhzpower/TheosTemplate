@@ -1,17 +1,17 @@
 //
-//  TheosTempelete.m
-//  TheosTempelete
+//  TheosTemplate.m
+//  TheosTemplate
 //
 //  Created by zhz on 2022/6/12.
 //
 
-#import "TheosTempelete.h"
+#import "TheosTemplate.h"
 
 void testlog(void) {
     NSLog(@"abcdifadfasas");
 }
 
-@implementation TheosTempelete
+@implementation TheosTemplate
 
 + (NSInteger)sum:(NSInteger) a add:(NSInteger)b {
     return a + b;
