@@ -18,6 +18,8 @@ DerivedData
 xcuserdata
 *.xcworkspace/xcshareddata/xcdebugger/
 packages
+*.xcscheme
+
 
 ## Other
 *.xccheckout
