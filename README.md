@@ -8,10 +8,7 @@
 
 # 使用方式：
 ## 1. 创建新tweak工程
-1. 修改tweakrc.plist中配置
-2. cd Bin/
-3. 执行 ·sh generate.sh·
-4. done
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/zhzDeveloper/TheosTemplate/main/Bin/generate.sh)"
 
 ## 2. coding
 1. TheosTemplate/Classes目录下直接写OC代码，有代码提示，和原生一样
@@ -21,7 +18,6 @@
 TODO: 自动读手机的ip
 TODO: 移除历史package
 TODO: 自动杀掉进程,自动重启进程
-TODO: 优化替换字符串
 
 
 

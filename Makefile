@@ -12,7 +12,7 @@ include $(THEOS)/makefiles/common.mk
 # 工程名称
 TWEAK_NAME = TheosTemplate
 # 进程名称
-INSTALL_TARGET_PROCESSES = xitu
+INSTALL_TARGET_PROCESSES = __Process__
 
 # 采用ARC内存管理
 TheosTemplate_CFLAGS = -fobjc-arc
