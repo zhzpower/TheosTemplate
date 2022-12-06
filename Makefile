@@ -18,9 +18,9 @@ INSTALL_TARGET_PROCESSES = __Process__
 TheosTemplate_CFLAGS = -fobjc-arc
 
 # 头文件
-TheosTemplate_OBJCFLAGS += -I./TheosTemplate/*/
-TheosTemplate_OBJCFLAGS += -I./TheosTemplate/Headers/
-TheosTemplate_OBJCFLAGS += -I./TheosTemplate/Classes/
+EmoCrack_OBJCFLAGS += -I./OCClass/*/
+EmoCrack_OBJCFLAGS += -I./OCClass/Headers/
+EmoCrack_OBJCFLAGS += -I./OCClass/Classes/
 #TheosTemplate_OBJCFLAGS += -I./TheosTemplate/Classes/*/*.h
 
 # 编译的实现文件
